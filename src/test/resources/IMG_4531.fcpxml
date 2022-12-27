@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fcpxml version="1.8">
+  <resources>
+    <format id="r1" frameDuration="1001/30000s" width="3840" height="2160" colorSpace="1-1-1 (Rec. 709)" />
+    <asset id="r2" name="IMG_4531.MOV" uid="11885948210804770580" src="file:///Volumes/Movies/Spring%20Boot%20Learning%20-%20Episode%2061%20-%20How%20to%20create%20a%20Spring%20MVC%20app%20with%20Spring%20Boot%203/Media/Film/Main/iPhone%2011%20Pro/IMG_4531.MOV" start="0/1s" duration="475227/600s" hasVideo="1" format="r1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="44.1k" />
+  </resources>
+  <library location="file:///Volumes/Movies/Spring%20Boot%20Learning%20-%20Episode%2061%20-%20How%20to%20create%20a%20Spring%20MVC%20app%20with%20Spring%20Boot%203/Project%20Files/IMG_4531.fcpxml">
+    <event name="IMG_4531" uid="db192619-7ec7-45f5-b047-88d00370c17c">
+      <project name="IMG_4531" uid="1e1a726b-e302-4344-ad85-e2ebe8375772" modDate="2022-12-07 13:14:50 -06:00">
+        <sequence duration="18511493/30000s" format="r1" tcStart="0/30000s" tcFormat="NDF" audioLayout="stereo" audioRate="44.1k">
+          <spine>
+            <asset-clip name="IMG_4531" offset="0/30000s" ref="r2" start="1001/1875s" duration="125125/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="125125/30000s" ref="r2" start="53053/10000s" duration="38038/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="163163/30000s" ref="r2" start="211211/30000s" duration="97097/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="260260/30000s" ref="r2" start="109109/10000s" duration="97097/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="357357/30000s" ref="r2" start="659659/30000s" duration="414414/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="771771/30000s" ref="r2" start="313313/7500s" duration="143143/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="914914/30000s" ref="r2" start="1430429/30000s" duration="302302/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="1217216/30000s" ref="r2" start="79079/1200s" duration="265265/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="1482481/30000s" ref="r2" start="1172171/15000s" duration="171171/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="1653652/30000s" ref="r2" start="109109/1250s" duration="1097096/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="2750748/30000s" ref="r2" start="1860859/15000s" duration="29029/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="2779777/30000s" ref="r2" start="1898897/15000s" duration="32032/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="2811809/30000s" ref="r2" start="3890887/30000s" duration="415415/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="3227224/30000s" ref="r2" start="4335331/30000s" duration="298298/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="3525522/30000s" ref="r2" start="309309/2000s" duration="28028/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="3553550/30000s" ref="r2" start="779779/5000s" duration="785785/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="4339335/30000s" ref="r2" start="5482477/30000s" duration="30030/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="4369365/30000s" ref="r2" start="2823821/15000s" duration="449449/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="4818814/30000s" ref="r2" start="251251/1200s" duration="824824/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="5643638/30000s" ref="r2" start="237237/1000s" duration="1361360/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="7004998/30000s" ref="r2" start="8619611/30000s" duration="404404/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="7409402/30000s" ref="r2" start="1814813/6000s" duration="130130/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="7539532/30000s" ref="r2" start="3114111/10000s" duration="740740/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="8280272/30000s" ref="r2" start="2521519/7500s" duration="406406/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="8686678/30000s" ref="r2" start="10493483/30000s" duration="687687/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="9374365/30000s" ref="r2" start="149149/400s" duration="293293/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="9667658/30000s" ref="r2" start="11694683/30000s" duration="418418/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="10086076/30000s" ref="r2" start="819819/2000s" duration="374374/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="10460450/30000s" ref="r2" start="12769757/30000s" duration="224224/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="10684674/30000s" ref="r2" start="13122109/30000s" duration="293293/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="10977967/30000s" ref="r2" start="2695693/6000s" duration="162162/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="11140129/30000s" ref="r2" start="13644631/30000s" duration="70070/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="11210199/30000s" ref="r2" start="862862/1875s" duration="191191/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="11401390/30000s" ref="r2" start="7086079/15000s" duration="157157/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="11558547/30000s" ref="r2" start="14431417/30000s" duration="202202/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="11760749/30000s" ref="r2" start="14901887/30000s" duration="440440/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="12201189/30000s" ref="r2" start="15454439/30000s" duration="238238/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="12439427/30000s" ref="r2" start="5288283/10000s" duration="256256/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="12695683/30000s" ref="r2" start="1014013/1875s" duration="42042/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="12737725/30000s" ref="r2" start="16269253/30000s" duration="190190/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="12927915/30000s" ref="r2" start="8325317/15000s" duration="329329/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="13257244/30000s" ref="r2" start="1710709/3000s" duration="29029/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="13286273/30000s" ref="r2" start="143143/250s" duration="152152/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="13438425/30000s" ref="r2" start="3466463/6000s" duration="519519/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="13957944/30000s" ref="r2" start="18037019/30000s" duration="38038/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="13995982/30000s" ref="r2" start="3620617/6000s" duration="313313/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="14309295/30000s" ref="r2" start="18437419/30000s" duration="280280/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="14589575/30000s" ref="r2" start="783783/1250s" duration="160160/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="14749735/30000s" ref="r2" start="6337331/10000s" duration="705705/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="15455440/30000s" ref="r2" start="19718699/30000s" duration="71071/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="15526511/30000s" ref="r2" start="19968949/30000s" duration="145145/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="15671656/30000s" ref="r2" start="20149129/30000s" duration="167167/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="15838823/30000s" ref="r2" start="3390387/5000s" duration="189189/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="16028012/30000s" ref="r2" start="827827/1200s" duration="740740/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="16768752/30000s" ref="r2" start="1430429/2000s" duration="32032/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="16800784/30000s" ref="r2" start="21572551/30000s" duration="178178/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="16978962/30000s" ref="r2" start="22053031/30000s" duration="319319/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="17298281/30000s" ref="r2" start="559559/750s" duration="31031/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="17329312/30000s" ref="r2" start="22433411/30000s" duration="84084/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="17413396/30000s" ref="r2" start="7524517/10000s" duration="170170/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="17583566/30000s" ref="r2" start="22763741/30000s" duration="209209/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="17792775/30000s" ref="r2" start="5748743/7500s" duration="604604/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="18397379/30000s" ref="r2" start="787787/1000s" duration="28028/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+            <asset-clip name="IMG_4531" offset="18425407/30000s" ref="r2" start="23670647/30000s" duration="86086/30000s" audioRole="dialogue" format="r1" tcFormat="NDF" />
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>

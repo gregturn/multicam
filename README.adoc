@@ -1,0 +1,41 @@
+= Java CLI project template
+
+Probably the fastest way to bootstrap a *Java* Command Line Application (**CLI**) project!
+
+Click the big green _Use This Template_ button and start building your own CLI.
+
+== 🤩 Highlights
+
+* uses https://picocli.info/[Picocli] for simple and elegant commands implementation
+* builds to an *executable jar* and *GraalVM Native Image*
+* preconfigured `help` and `version` commands
+* uses *Maven* as a build tool
+* *no frameworks* like Spring, Micronaut or Quarkus
+
+== 🛠 Requirements
+
+* GraalVM distribution of Java (easy to install with https://sdkman.io/)
+
+== 🤔 How to use
+
+Run tests &amp; build an executable JAR:
+
+----
+$ ./mvnw package
+
+----
+
+Run tests as native image &amp; build a native executable:
+
+----
+$ ./mvnw package -Pnative
+
+----
+
+Run application through Maven
+
+----
+$ ./mvnw -Dexec.args=help
+----
+
+Sounds good? Consider https://github.com/sponsors/maciejwalkowiak[❤️ Sponsoring] the project! Thank you!
