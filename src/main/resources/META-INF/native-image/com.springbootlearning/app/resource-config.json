@@ -2,6 +2,9 @@
   "resources" : [
     {
       "pattern": "\\Qapp.properties\\E"
+    },
+    {
+      "pattern": "com.springbootlearning.multicam.*"
     }
   ]
 }

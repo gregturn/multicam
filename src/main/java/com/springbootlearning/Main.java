@@ -29,7 +29,7 @@ import com.springbootlearning.multicam.MulticamStrategy;
 import com.springbootlearning.picocli.PropertiesFileVersionProvider;
 import com.springbootlearning.recut.RecutFcpxml;
 
-@Command(name = "app", mixinStandardHelpOptions = true, versionProvider = PropertiesFileVersionProvider.class)
+@Command(name = "multicam", mixinStandardHelpOptions = true, versionProvider = PropertiesFileVersionProvider.class)
 public class Main implements Callable<Integer> {
 
 	@Parameters(index = "0", //
