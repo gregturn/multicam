@@ -29,12 +29,20 @@ class MainTests {
 	}
 
 	@Test
-	void readsRecutFcpXml() {
+	void convertsRecutFcpXmlToMulticamFcpXml() {
 
-		int exitCode = cmd.execute("src/test/resources");
+		int exitCode = cmd.execute("src/test/resources", "--verbose");
 		assertThat(exitCode).isEqualTo(0);
 		String output = sw.toString();
 		System.out.println(output);
 	}
 
+	// @Test
+	// void writesMulticamFcpXmlToFile() {
+	//
+	// int exitCode = cmd.execute("src/test/resources", "-o .");
+	// assertThat(exitCode).isEqualTo(0);
+	// String output = sw.toString();
+	// System.out.println(output);
+	// }
 }

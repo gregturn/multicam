@@ -1,5 +1,7 @@
 package com.springbootlearning.multicam;
 
+import static com.springbootlearning.MulticamUtils.rootName;
+
 import java.util.List;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
@@ -15,17 +17,13 @@ public record Multicam( //
 	public static Multicam transform(Resources resources) {
 		return new Multicam(resources.format().id(), "0s", "NDF", //
 				List.of( //
-						new Angle("Original", "a_original",
-								new AssetClip(resources.asset().id(), "0s", name(resources.asset().name()), "NDF", "dialogue")),
-						new Angle("Zoom/Left", "a-zoom-left",
-								new AssetClip(resources.asset().id(), "0s", name(resources.asset().name()), "NDF", "dialogue")),
-						new Angle("Zoom/Right", "a-zoom-right",
-								new AssetClip(resources.asset().id(), "0s", name(resources.asset().name()), "NDF", "dialogue")),
-						new Angle("Close Up", "a_close_up",
-								new AssetClip(resources.asset().id(), "0s", name(resources.asset().name()), "NDF", "dialogue"))));
-	}
-
-	static private String name(String name) {
-		return name.split("\\.")[0];
+						new Angle("Original", MulticamAngle.ORIGINAL.getAngleID(),
+								new AssetClip(resources.asset().id(), "0s", rootName(resources.asset().name()), "NDF", "dialogue")),
+						new Angle("Zoom/Left", MulticamAngle.ZOOM_LEFT.getAngleID(),
+								new AssetClip(resources.asset().id(), "0s", rootName(resources.asset().name()), "NDF", "dialogue")),
+						new Angle("Zoom/Right", MulticamAngle.ZOOM_RIGHT.getAngleID(),
+								new AssetClip(resources.asset().id(), "0s", rootName(resources.asset().name()), "NDF", "dialogue")),
+						new Angle("Close Up", MulticamAngle.CLOSEUP.getAngleID(),
+								new AssetClip(resources.asset().id(), "0s", rootName(resources.asset().name()), "NDF", "dialogue"))));
 	}
 }

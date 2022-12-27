@@ -2,6 +2,7 @@ package com.springbootlearning.multicam;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
+import com.springbootlearning.recut.RecutFcpxml;
 
 @JacksonXmlRootElement(localName = "fcpxml")
 public record MulticamFcpxml( //
@@ -9,7 +10,7 @@ public record MulticamFcpxml( //
 		Resources resources, //
 		Library library) {
 
-	public static MulticamFcpxml transform(com.springbootlearning.recut.Fcpxml fcpxml) {
-		return new MulticamFcpxml("1.10", Resources.transform(fcpxml.resources()), Library.transform(fcpxml.library()));
+	public static MulticamFcpxml transform(RecutFcpxml recutFcpxml) {
+		return new MulticamFcpxml("1.10", Resources.transform(recutFcpxml.resources()), Library.transform(recutFcpxml.library()));
 	}
 }

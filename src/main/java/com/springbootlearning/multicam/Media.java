@@ -1,6 +1,7 @@
 package com.springbootlearning.multicam;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+import com.springbootlearning.MulticamUtils;
 import com.springbootlearning.recut.Resources;
 
 public record Media( //
@@ -9,6 +10,7 @@ public record Media( //
 		Multicam multicam) {
 
 	public static Media transform(Resources resources) {
-		return new Media("r99", resources.asset().name().split("\\.")[0] + "_multicam", Multicam.transform(resources));
+		return new Media(MulticamUtils.MULTICAM_REF, MulticamUtils.mediaClipName(resources.asset().name()),
+				Multicam.transform(resources));
 	}
 }
