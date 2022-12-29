@@ -8,5 +8,6 @@ public record AssetClip( //
 		@JacksonXmlProperty(isAttribute = true) String offset, //
 		@JacksonXmlProperty(isAttribute = true) String name, //
 		@JacksonXmlProperty(isAttribute = true) String tcFormat, //
-		@JacksonXmlProperty(isAttribute = true) String audioRole) {
+		@JacksonXmlProperty(isAttribute = true) String audioRole, //
+		@JacksonXmlProperty(isAttribute = true) String duration) {
 }

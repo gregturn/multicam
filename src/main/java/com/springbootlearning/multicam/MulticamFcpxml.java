@@ -11,6 +11,7 @@ public record MulticamFcpxml( //
 		Library library) {
 
 	public static MulticamFcpxml transform(RecutFcpxml recutFcpxml) {
-		return new MulticamFcpxml("1.10", Resources.transform(recutFcpxml.resources()), Library.transform(recutFcpxml.library()));
+		return new MulticamFcpxml("1.10", Resources.transform(recutFcpxml.resources(), recutFcpxml.library()),
+				Library.transform(recutFcpxml.library(), recutFcpxml.resources()));
 	}
 }

@@ -2,6 +2,8 @@ package com.springbootlearning.multicam;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.springbootlearning.recut.Event;
+import com.springbootlearning.recut.Library;
+import com.springbootlearning.recut.Resources;
 
 public record Sequence( //
 		@JacksonXmlProperty(isAttribute = true) String duration, //
@@ -15,6 +17,13 @@ public record Sequence( //
 	public static Sequence transform(Event event) {
 		return new Sequence(event.project().sequence().duration(), event.project().sequence().format(),
 				event.project().sequence().tcStart(), event.project().sequence().tcFormat(),
-				event.project().sequence().audioLayout(), event.project().sequence().audioRate(), Spine.transform(event));
+				event.project().sequence().audioLayout(), event.project().sequence().audioRate(),
+				MulticamSpine.transform(event));
+	}
+
+	public static Sequence transformCompoundClip(Resources resources, Library library) {
+		return new Sequence(resources.asset().duration(), resources.format().id(),
+				library.event().project().sequence().tcStart(), library.event().project().sequence().tcFormat(), null, null,
+				CompoundSpine.transform(resources, library));
 	}
 }
