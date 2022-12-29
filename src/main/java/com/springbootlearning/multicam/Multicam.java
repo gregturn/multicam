@@ -19,11 +19,11 @@ public record Multicam( //
 				List.of( //
 						new Angle("Original", MulticamAngle.ORIGINAL.getAngleID(),
 								new AssetClip(resources.asset().id(), "0s", rootName(resources.asset().name()), "NDF", "dialogue")),
+						new Angle("Close Up", MulticamAngle.CLOSEUP.getAngleID(),
+								new AssetClip(resources.asset().id(), "0s", rootName(resources.asset().name()), "NDF", "dialogue")),
 						new Angle("Zoom/Left", MulticamAngle.ZOOM_LEFT.getAngleID(),
 								new AssetClip(resources.asset().id(), "0s", rootName(resources.asset().name()), "NDF", "dialogue")),
 						new Angle("Zoom/Right", MulticamAngle.ZOOM_RIGHT.getAngleID(),
-								new AssetClip(resources.asset().id(), "0s", rootName(resources.asset().name()), "NDF", "dialogue")),
-						new Angle("Close Up", MulticamAngle.CLOSEUP.getAngleID(),
 								new AssetClip(resources.asset().id(), "0s", rootName(resources.asset().name()), "NDF", "dialogue"))));
 	}
 }
