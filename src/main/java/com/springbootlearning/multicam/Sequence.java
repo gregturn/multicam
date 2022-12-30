@@ -14,11 +14,11 @@ public record Sequence( //
 		@JacksonXmlProperty(isAttribute = true) String audioRate, //
 		Spine spine) {
 
-	public static Sequence transform(Event event) {
+	public static Sequence transform(Event event, MulticamStrategy multicamStrategy) {
 		return new Sequence(event.project().sequence().duration(), event.project().sequence().format(),
 				event.project().sequence().tcStart(), event.project().sequence().tcFormat(),
 				event.project().sequence().audioLayout(), event.project().sequence().audioRate(),
-				MulticamSpine.transform(event));
+				MulticamSpine.transform(event, multicamStrategy));
 	}
 
 	public static Sequence transformCompoundClip(Resources resources, Library library) {

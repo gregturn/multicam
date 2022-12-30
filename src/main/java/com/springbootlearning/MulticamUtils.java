@@ -1,5 +1,7 @@
 package com.springbootlearning;
 
+import com.springbootlearning.multicam.MulticamStrategy;
+
 public class MulticamUtils {
 
 	public static final String MULTICAM_REF = "r99";
@@ -42,7 +44,7 @@ public class MulticamUtils {
 	 * @param name
 	 * @return
 	 */
-	public static String projectName(String name) {
-		return rootName(name) + MULTICAM_SUFFIX;
+	public static String projectName(String name, MulticamStrategy multicamStrategy) {
+		return rootName(name) + multicamStrategy.getSuffix();
 	}
 }

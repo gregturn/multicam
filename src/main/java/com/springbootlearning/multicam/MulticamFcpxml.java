@@ -10,8 +10,8 @@ public record MulticamFcpxml( //
 		Resources resources, //
 		Library library) {
 
-	public static MulticamFcpxml transform(RecutFcpxml recutFcpxml) {
+	public static MulticamFcpxml transform(RecutFcpxml recutFcpxml, MulticamStrategy multicamStrategy) {
 		return new MulticamFcpxml("1.10", Resources.transform(recutFcpxml.resources(), recutFcpxml.library()),
-				Library.transform(recutFcpxml.library(), recutFcpxml.resources()));
+				Library.transform(recutFcpxml.library(), recutFcpxml.resources(), multicamStrategy));
 	}
 }

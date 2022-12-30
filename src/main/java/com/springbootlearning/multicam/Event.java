@@ -18,8 +18,9 @@ public record Event( //
 		@JacksonXmlProperty(localName = "mc-clip") McClip mcClipWholeClip, //
 		Project project) {
 
-	public static Event transform(com.springbootlearning.recut.Event event, Resources resources) {
-		return new Event(event.name() + "_multi_cam", List.of( //
+	public static Event transform(com.springbootlearning.recut.Event event, Resources resources,
+			MulticamStrategy multicamStrategy) {
+		return new Event(event.name() + multicamStrategy.getSuffix(), List.of( //
 				new AssetClip(ORIGINAL.getId(), null, event.name() + ORIGINAL.getCompoundClipSuffix(), null, null,
 						resources.asset().duration()),
 				new AssetClip(CLOSEUP.getId(), null, event.name() + CLOSEUP.getCompoundClipSuffix(), null, null,
@@ -28,6 +29,6 @@ public record Event( //
 						resources.asset().duration()),
 				new AssetClip(ZOOM_RIGHT.getId(), null, event.name() + ZOOM_RIGHT.getCompoundClipSuffix(), null, null,
 						resources.asset().duration())),
-				McClip.transform(event), Project.transform(event));
+				McClip.transform(event), Project.transform(event, multicamStrategy));
 	}
 }

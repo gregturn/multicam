@@ -21,6 +21,20 @@
     "allPublicMethods" : true
   },
   {
+    "name" : "com.springbootlearning.multicam.CompoundMedia",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true
+  },
+  {
+    "name" : "com.springbootlearning.multicam.CompoundSpine",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true
+  },
+  {
     "name" : "com.springbootlearning.multicam.Event",
     "allDeclaredConstructors" : true,
     "allPublicConstructors" : true,
@@ -78,6 +92,20 @@
   },
   {
     "name" : "com.springbootlearning.multicam.MulticamFcpxml",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true
+  },
+  {
+    "name" : "com.springbootlearning.multicam.MulticamMedia",
+    "allDeclaredConstructors" : true,
+    "allPublicConstructors" : true,
+    "allDeclaredMethods" : true,
+    "allPublicMethods" : true
+  },
+  {
+    "name" : "com.springbootlearning.multicam.MulticamSpine",
     "allDeclaredConstructors" : true,
     "allPublicConstructors" : true,
     "allDeclaredMethods" : true,

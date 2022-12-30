@@ -5,7 +5,6 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
-import com.springbootlearning.Main;
 import com.springbootlearning.MulticamUtils;
 import com.springbootlearning.recut.AssetClip;
 import com.springbootlearning.recut.Event;
@@ -23,9 +22,9 @@ public record McClip( //
 				event.project().sequence().duration(), McSource.transform(event));
 	}
 
-	public static List<McClip> transform(List<AssetClip> assetClips) {
+	public static List<McClip> transform(List<AssetClip> assetClips, MulticamStrategy multicamStrategy) {
 
-		return switch (Main.multicamStrategy) {
+		return switch (multicamStrategy) {
 
 			case ONE_CAMERA -> assetClips.stream() //
 					.map(McClip::originalClip) //

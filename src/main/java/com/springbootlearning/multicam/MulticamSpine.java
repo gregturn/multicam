@@ -11,7 +11,7 @@ public record MulticamSpine( //
 		implements
 			Spine {
 
-	public static MulticamSpine transform(Event event) {
-		return new MulticamSpine(McClip.transform(event.project().sequence().spine().assetClips()));
+	public static MulticamSpine transform(Event event, MulticamStrategy multicamStrategy) {
+		return new MulticamSpine(McClip.transform(event.project().sequence().spine().assetClips(), multicamStrategy));
 	}
 }

@@ -5,7 +5,8 @@ import com.springbootlearning.recut.Resources;
 
 public record Library(@JacksonXmlProperty(isAttribute = true) String location, Event event) {
 
-	public static Library transform(com.springbootlearning.recut.Library library, Resources resources) {
-		return new Library(library.location(), Event.transform(library.event(), resources));
+	public static Library transform(com.springbootlearning.recut.Library library, Resources resources,
+			MulticamStrategy multicamStrategy) {
+		return new Library(library.location(), Event.transform(library.event(), resources, multicamStrategy));
 	}
 }
