@@ -73,7 +73,7 @@ public class Main implements Callable<Integer> {
 
 			List<MulticamStrategy> multicamStrategies = Optional.ofNullable(multicamStrategy) //
 					.map(List::of) //
-					.orElseGet(() -> Stream.of(MulticamStrategy.values()).toList());
+					.orElseGet(() -> List.of(MulticamStrategy.TWO_CAMERA_ALTERNATING));
 
 			stream //
 					.filter(path -> filter.accept(path.toFile())) //
