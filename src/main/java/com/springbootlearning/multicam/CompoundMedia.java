@@ -10,6 +10,6 @@ public record CompoundMedia(//
 		Sequence sequence) implements Media {
 
 	public static CompoundMedia transform(Resources resources, Library library, String compoundId, String suffix) {
-		return new CompoundMedia(compoundId, library.event().name() + suffix, Sequence.transformCompoundClip(resources, library));
+		return new CompoundMedia(compoundId, library.event().name() + suffix, Sequence.transformCompoundClip(compoundId, resources, library));
 	}
 }

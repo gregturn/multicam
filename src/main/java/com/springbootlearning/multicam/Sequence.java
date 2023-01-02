@@ -21,9 +21,9 @@ public record Sequence( //
 				MulticamSpine.transform(event, multicamStrategy));
 	}
 
-	public static Sequence transformCompoundClip(Resources resources, Library library) {
+	public static Sequence transformCompoundClip(String compoundId, Resources resources, Library library) {
 		return new Sequence(resources.asset().duration(), resources.format().id(),
 				library.event().project().sequence().tcStart(), library.event().project().sequence().tcFormat(), null, null,
-				CompoundSpine.transform(resources, library));
+				CompoundSpine.transform(compoundId, resources, library));
 	}
 }
