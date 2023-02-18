@@ -78,8 +78,13 @@ public class Main implements Callable<Integer> {
 			stream //
 					.filter(path -> filter.accept(path.toFile())) //
 					.filter(RecutUtils::isRecutFile) //
-					.forEach(path1 -> multicamStrategies
-							.forEach(multicamStrategy1 -> convertRecutFcpXmlToMulticamFcpXml(path1, multicamStrategy1, outputPath)));
+					.forEach(thisPath -> multicamStrategies.forEach(strategy -> {
+						if (outputPath == null) {
+							convertRecutFcpXmlToMulticamFcpXml(thisPath, strategy, thisPath.getParent());
+						} else {
+							convertRecutFcpXmlToMulticamFcpXml(thisPath, strategy, outputPath);
+						}
+					}));
 
 			return 0;
 		} catch (NoSuchFileException e) {

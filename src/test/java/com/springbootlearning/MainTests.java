@@ -1,14 +1,14 @@
 package com.springbootlearning;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.*;
 
-import org.junit.jupiter.api.Disabled;
 import picocli.CommandLine;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 class MainTests {
@@ -22,12 +22,13 @@ class MainTests {
 	}
 
 	@Test
-	@Disabled
 	void printsVersion() {
 
 		int exitCode = cmd.execute("-V");
 		assertThat(exitCode).isEqualTo(0);
-		assertThat(sw.toString()).isNotBlank().isEqualTo("");
+		assertThat(sw.toString()) //
+				.isNotBlank() //
+				.isEqualToIgnoringWhitespace("1.0-SNAPSHOT");
 	}
 
 	@Test
@@ -39,12 +40,13 @@ class MainTests {
 		System.out.println(output);
 	}
 
-	// @Test
-	// void writesMulticamFcpXmlToFile() {
-	//
-	// int exitCode = cmd.execute("src/test/resources", "-o .");
-	// assertThat(exitCode).isEqualTo(0);
-	// String output = sw.toString();
-	// System.out.println(output);
-	// }
+	@Disabled
+	@Test
+	void writesMulticamFcpXmlToFile() {
+
+		int exitCode = cmd.execute("src/test/resources", "-o .");
+		assertThat(exitCode).isEqualTo(0);
+		String output = sw.toString();
+		System.out.println(output);
+	}
 }
