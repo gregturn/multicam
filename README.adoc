@@ -13,7 +13,7 @@ However, something LACKING in Recut is the ability to apply those cuts to someth
 
 If you're wondering WHY you should be using multicams, then check out Matthew O'Brien's super slick video on the value and ease of doing this:
 
-video::B6gJVyM1gNs[youtube]
+https://www.youtube.com/watch?v=B6gJVyM1gNs[Matthew's cool video on multicams]
 
 Once I adopted both Recut and the usage of multicams, my ability to crank out an engaging, enjoyable video went UP while my efforts went DOWN.
 
