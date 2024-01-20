@@ -1,22 +1,27 @@
-= Java CLI project template
+= Basics
 
-Probably the fastest way to bootstrap a *Java* Command Line Application (**CLI**) project!
+If you have https://springbootlearning.com/recut[Recut], then this tool will accelerate things even faster!
 
-Click the big green _Use This Template_ button and start building your own CLI.
+What does Recut do?
 
-== 🤩 Highlights
+* For every clip, it finds the silent gaps.
+* It produces an XML export file to take to your NLE and thus REMOVE those silent gaps.
+* Just walk through the whole timeline inside your NLE and throw away the earlier takes.
+* Profit!
 
-* uses https://picocli.info/[Picocli] for simple and elegant commands implementation
-* builds to an *executable jar* and *GraalVM Native Image*
-* preconfigured `help` and `version` commands
-* uses *Maven* as a build tool
-* *no frameworks* like Spring, Micronaut or Quarkus
+However, something LACKING in Recut is the ability to apply those cuts to something more sophisticated, like a multicam version of things.
+
+If you're wondering WHY you should be using multicams, then check out Matthew O'Brien's super slick video on the value and ease of doing this:
+
+video::B6gJVyM1gNs[youtube]
+
+Once I adopted both Recut and the usage of multicams, my ability to crank out an engaging, enjoyable video went UP while my efforts went DOWN.
 
 == 🛠 Requirements
 
-* GraalVM distribution of Java (easy to install with https://sdkman.io/)
+* GraalVM distribution of Java 17 (easy to install with https://sdkman.io/)
 
-== 🤔 How to use
+== 🤔 How to build
 
 Run tests &amp; build an executable JAR:
 
@@ -38,4 +43,26 @@ Run application through Maven
 $ ./mvnw -Dexec.args=help
 ----
 
-Sounds good? Consider https://github.com/sponsors/maciejwalkowiak[❤️ Sponsoring] the project! Thank you!
+== 👍 How to use
+
+. Stage your clip in its target location. (I have a RAID array, with a separate folder for each video.)
+. Run that clip through Recut.
+. Export the XML for Final Cut Pro (only supported NLE for this tool) and host it in your project folder. (Again, mine is on my RAID array.)
+. Execute `multicam /path/to/recut_xml_file.xml` (the generated XML file will be right next to the Recut one.)
+. Import the XML files from *Recut* and *Multicam* into your project.
+. Profit! 💰
+
+== Critical Notes
+
+* The "original" clip is wrapped into a compound clip, allowing you to make tweaks and changes inside the compound clip that will then percolate throughout your project.
+* The "closeup" clip is another compound clip, with the "original" compound clip inside it. Again, this makes it where you can go inside the "closeup" compound clip and do your tweak to "zoom in".
+* The "zoom left" and "zoom right" clips ALSO wrap the "original" compound clip, allowing you to apply similar changes there.
+* Any change done inside the "original" compound clip (color correction or sound adjustments) will ripple to all other compound clips.
+* You can choose whether you want to apply effects to the original clip inside "original", or if you want to use adjustment layers. The choice is yours!
+
+INFO: Because you now have a compound clip, it's a snap to add additional angles from other sources and sync based on the waveforms.
+
+== Options
+
+* *Multicam* defaults to alternating between "original" and "closeup". There are other options, but this usually leaves me with the best options.
+* Because I usually end up throwing away bad takes, etc., when I end up with two "original" takes back-to-back, I can often swap one with a "zoom left" or "zoom right" and maintain my cadence.
